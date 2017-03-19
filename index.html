@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>altspace-videoplayer</title>
+    <meta name="description" content="altspace-videoplayer">
+    <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+    <script src="https://raw.githubusercontent.com/AltspaceVR/AltspaceSDK/master/dist/altspace.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nunjucks/3.0.0/nunjucks.min.js"></script>
+    <script src="https://rawgit.com/ngokevin/kframe/a1df8fc01514e509ba6d39c964254a1f1043b12b/dist/kframe.min.js"></script>
+
+</head>
+<body>
+<a-scene debug altspace="fullspace: true" sync-system='author: joeyfb; app: video-room '>
+    <a-assets>
+        <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg">
+    </a-assets>
+
+    <!-- setting -->
+    <a-sky height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"></a-sky>
+
+    <a-plane color="#333" rotation="-90 0 0" height="100" width="100"></a-plane>
+
+    <a-entity position="0 1.25 -0.5" rotation="0 180 0" 
+         n-text="Hello squirls!"></a-entity>
+
+</a-scene>
+</body>
+</html>
